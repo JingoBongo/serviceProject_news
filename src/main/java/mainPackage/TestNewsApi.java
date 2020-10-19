@@ -28,11 +28,9 @@ public class TestNewsApi {
 
     public static void main(String[] args) throws IOException {
         callPostToServer();
-//        callPutToServer();
-//        callGetToServer();
+        callPutToServer();
+        callGetToServer();
     }
-
-
 
 
     public static void recursivePostRegisterInGate() throws UnsupportedEncodingException {
@@ -57,8 +55,10 @@ public class TestNewsApi {
 //Execute and get the response.
             HttpResponse response = httpclient.execute(httppost);
             HttpEntity responseEntity = response.getEntity();
-            if(response.getStatusLine().getStatusCode() != (HttpStatus.SC_OK) ){
-               recursivePostRegisterInGate();
+            if (response.getStatusLine().getStatusCode() != (HttpStatus.SC_OK)) {
+                recursivePostRegisterInGate();
+            } else {
+                System.out.println("Registered at gateway.");
             }
             System.out.println();
         } catch (ClientProtocolException e) {
@@ -69,7 +69,7 @@ public class TestNewsApi {
 
     }
 
-    public static String callToNews(String url, String topic,List<String> parameters) throws IOException {
+    public static String callToNews(String url, String topic, List<String> parameters) throws IOException {
         ResponseHandler<String> handler = new BasicResponseHandler();
         HttpClient client = HttpClientBuilder.create().build();
         String allTextFromPage = "";
@@ -87,63 +87,76 @@ public class TestNewsApi {
             HttpGet request = new HttpGet(finalUrl.toString());
             request.addHeader("X-Api-Key", myPersonalApiKey);
             HttpResponse response = client.execute(request);
-             allTextFromPage = handler.handleResponse(response);
+            allTextFromPage = handler.handleResponse(response);
         } finally {
             ((CloseableHttpClient) client).close();
         }
         return allTextFromPage;
     }
 
-    public static void callPostToServer () throws IOException {
-        String urrl = "http://localhost:8003/news";
+    public static void callPostToServer() throws IOException {
+//        String urrl = "http://localhost:8003/news";
+        String urrl = "http://localhost:8003/";
 
         HttpClient httpclient = HttpClients.createDefault();
         HttpPost httppost = new HttpPost(urrl);
 
         httppost.setHeader("Content-Type", "application/json");
-        StringEntity param = new StringEntity("{\"topic\":\"lada\"}");
+        StringEntity param = new StringEntity("{\"functionName\":\"news\",\"topic\":\"lada\"}");
 
 
         httppost.setEntity(param);
 
 //Execute and get the response.
         HttpResponse response = httpclient.execute(httppost);
-        HttpEntity entity = response.getEntity();
-        System.out.println();
+        ResponseHandler<String> handler = new BasicResponseHandler();
+        String textRepo = handler.handleResponse(response);
+//        HttpEntity entity = response.getEntity();
+        System.out.println(textRepo);
 
     }
-    public static void callPutToServer () throws IOException {
-        String urrl = "http://localhost:8001/news";
+
+    public static void callPutToServer() throws IOException {
+//        String urrl = "http://localhost:8003/news";
+        String urrl = "http://localhost:8003/";
         HttpClient httpclient = HttpClients.createDefault();
         HttpPut httpput = new HttpPut(urrl);
 
         httpput.setHeader("Content-Type", "application/json");
 //        StringEntity param = new StringEntity("{\"topic\":\"lada\"}");
-        StringEntity param = new StringEntity("{\"id\":\"1\",\"finalize\":true}");
+        StringEntity param = new StringEntity("{\"id\":\"80800\",\"finalize\":true}");
 
 
         httpput.setEntity(param);
 
 //Execute and get the response.
+//        HttpResponse response = httpclient.execute(httpput);
         HttpResponse response = httpclient.execute(httpput);
-        HttpEntity entity = response.getEntity();
-
-
-        System.out.println();
+        ResponseHandler<String> handler = new BasicResponseHandler();
+        String textRepo = handler.handleResponse(response);
+//        HttpEntity entity = response.getEntity();
+        System.out.println(textRepo);
 
     }
+
     public static void callGetToServer() throws IOException {
-        String urrl = "http://localhost:8001/news";
-        ResponseHandler<String> handler = new BasicResponseHandler();
+//        String urrl = "http://localhost:8001/news";
+        String urrl = "http://localhost:8003/";
+//        ResponseHandler<String> handler = new BasicResponseHandler();
         HttpClient client = HttpClientBuilder.create().build();
-        HttpGet request = new HttpGet(urrl + "?id=1");
+        HttpGet request = new HttpGet(urrl + "?id=80800");
 //        request.addHeader("X-Api-Key", myPersonalApiKey);
         HttpResponse response = client.execute(request);
-        String allTextFromPage = handler.handleResponse(response);
+//        String allTextFromPage = handler.handleResponse(response);
+
+        ResponseHandler<String> handler = new BasicResponseHandler();
+        String textRepo = handler.handleResponse(response);
+//        HttpEntity entity = response.getEntity();
+        System.out.println(textRepo);
+
         ((CloseableHttpClient) client).close();
 //        return allTextFromPage;
     }
-
 
 
 }

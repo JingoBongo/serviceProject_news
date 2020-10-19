@@ -45,10 +45,10 @@ public class MainRunner {
 //        poolSize = Integer.valueOf(args[1]);
 //        2 : gate ip
 //        gateIp = args[2];
-        gateIp = "no such";
+        gateIp = "localhost";
 //        3 : gate port
 //        gatePort = args[3];
-        gatePort = "no such";
+        gatePort = "8003";
 //        4 : db type
 //        dbType = args[4];
         dbType = "mysql";
@@ -57,7 +57,7 @@ public class MainRunner {
         dbIp = "172.17.0.2";
 //        6 : db port
 //        dbPort = args[6];
-        dbPort = "33060";
+        dbPort = "3306";
 //        7 : db name
 //        dbName = args[7];
         dbName = "news";
@@ -66,7 +66,7 @@ public class MainRunner {
 
         //Register in service
         //TODO: uncomment
-//        recursivePostRegisterInGate();
+        recursivePostRegisterInGate();
         //
 
         //we need a part for storing all requests data
@@ -83,6 +83,7 @@ public class MainRunner {
         server.createContext("/news", new  NewsHttpHandler());
         server.setExecutor(threadPoolExecutor);
         server.start();
+        System.out.println(" Server started on port "+MainRunner.servicePort);
 
     }
 }

@@ -17,7 +17,7 @@ public class DbUtils {
         try {
             //1. get connection to db
 //            Connection myConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/news", "root", "root");
-            Connection myConn = DriverManager.getConnection("jdbc:mysql://\"+MainRunner.dbIp+\":"+MainRunner.dbPort+"/"+MainRunner.dbName, "root", "root");
+            Connection myConn = DriverManager.getConnection("jdbc:mysql://"+MainRunner.dbIp+":"+MainRunner.dbPort+"/"+MainRunner.dbName, "pUser", "root");
             //2. create statement
             Statement myStmt = myConn.createStatement();
             //3. execute sql query
@@ -39,7 +39,7 @@ public class DbUtils {
         try{
             //1. get connection to db
 //            Connection myConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/news", "root", "root");
-            Connection myConn = DriverManager.getConnection("jdbc:mysql://\"+MainRunner.dbIp+\":"+MainRunner.dbPort+"/"+MainRunner.dbName, "root", "root");
+            Connection myConn = DriverManager.getConnection("jdbc:mysql://"+MainRunner.dbIp+":"+MainRunner.dbPort+"/"+MainRunner.dbName, "pUser", "root");
             //2. create statement
             Statement myStmt = myConn.createStatement();
             //3. execute sql query
@@ -49,7 +49,7 @@ public class DbUtils {
             while (myRs.next()){
 //                    System.out.println(myRs.getString("name") + ", "+myRs.getString("newsBody"));
                 itemFields.put("newsDescription",myRs.getString("newsDescription"));
-                itemFields.put("newsUrl",myRs.getString("newsUrl"));
+                itemFields.put("newsUrl",myRs.getString("newsUrls"));
                 itemFields.put("newsTopic",myRs.getString("newsTopic"));
                 itemFields.put("date",myRs.getString("date"));
                 itemFields.put("id", myRs.getString("id"));
@@ -67,12 +67,12 @@ public class DbUtils {
         try{
             //1. get connection to db
 //            Connection myConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/news", "root", "root");
-            Connection myConn = DriverManager.getConnection("jdbc:mysql://\"+MainRunner.dbIp+\":"+MainRunner.dbPort+"/"+MainRunner.dbName, "root", "root");
+            Connection myConn = DriverManager.getConnection("jdbc:mysql://"+MainRunner.dbIp+":"+MainRunner.dbPort+"/"+MainRunner.dbName, "pUser", "root");
             //2. create statement
             Statement myStmt = myConn.createStatement();
             //3. execute sql query
             int res =  myStmt.executeUpdate("insert into mainnewstable " +
-                                                        "(newsDescription, newsUrl, newsTopic)" +
+                                                        "(newsDescription, newsUrls, newsTopic)" +
                                                         "values (\""+item.articles.get(0).description+"\",\""+item.articles.get(0).url+"\",\""+topic+"\")");
             if(res == 1){
                 return true;
@@ -91,14 +91,14 @@ public class DbUtils {
         try{
             //1. get connection to db
 //            Connection myConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/news", "root", "root");
-            Connection myConn = DriverManager.getConnection("jdbc:mysql://\"+MainRunner.dbIp+\":"+MainRunner.dbPort+"/"+MainRunner.dbName, "root", "root");
+            Connection myConn = DriverManager.getConnection("jdbc:mysql://"+MainRunner.dbIp+":"+MainRunner.dbPort+"/"+MainRunner.dbName, "pUser", "root");
             //2. create statement
             Statement myStmt = myConn.createStatement();
             //3. execute sql query
             return myStmt.execute("update news.mainnewstable\n" +
                     "set\n" +
                     "\tnewsDescription = '"+item.articles.get(0).description+"',\n" +
-                    "    newsUrl = '"+item.articles.get(0).url+"',\n" +
+                    "    newsUrls = '"+item.articles.get(0).url+"',\n" +
                     "    date = now()\n" +
                     "where \n" +
                     "\tid = '"+id+"'");
@@ -116,11 +116,11 @@ public class DbUtils {
             try{
                 //1. get connection to db
 //                Connection myConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/news", "root", "root");
-                Connection myConn = DriverManager.getConnection("jdbc:mysql://"+MainRunner.dbIp+":"+MainRunner.dbPort+"/"+MainRunner.dbName, "root", "root");
+                Connection myConn = DriverManager.getConnection("jdbc:mysql://"+MainRunner.dbIp+":"+MainRunner.dbPort+"/"+MainRunner.dbName, "pUser", "root");
                 //2. create statement
                 Statement myStmt = myConn.createStatement();
                 //3. execute sql query
-                ResultSet myRs = myStmt.executeQuery("select * from commonTopics");
+                ResultSet myRs = myStmt.executeQuery("select * from commontopics");
                 //4. process results set
                 List<String> topics = new ArrayList<>();
                 while (myRs.next()){

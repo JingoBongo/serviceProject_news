@@ -230,16 +230,23 @@ public class NewsHttpHandler implements HttpHandler {
                 JSONObject jsonObject = new JSONObject();
                 jsonObject.put("id", id);
                 jsonObject.put("status", "done");
+                MainRunner.getRequestsMap().remove(id);
+
+
                 if(itemFromDbHasValidDate){
-                    jsonObject.put("newsDescription", itemFromDb.get("newsDescription"));
-                    jsonObject.put("newsUrl", itemFromDb.get("newsUrl"));
+                    String tempDesc = itemFromDb.get("newsDescription");
+                    jsonObject.put("newsDescription", tempDesc.substring(0, (tempDesc.length()-tempDesc.length()/2)/2));
+                    jsonObject.put("newsUrl", itemFromDb.get("newsUrls"));
                 } else {
-                    jsonObject.put("newsDescription", responseToReturn.articles.get(0).description);
+                    String tempDesc =responseToReturn.articles.get(0).description;
+                    jsonObject.put("newsDescription", tempDesc.substring(0, (tempDesc.length()-tempDesc.length()/2)/2));
                     jsonObject.put("newsUrl", responseToReturn.articles.get(0).url);
                 }
+
                 String payload = jsonObject.toString();
-                System.out.println();
-                sendResponse(httpExchange, payload);
+                System.out.println(payload);
+                System.out.println(payload.length());
+                sendResponseGet(httpExchange, payload);
             } else {
                 System.err.println("there is no such process");
             }
@@ -247,6 +254,8 @@ public class NewsHttpHandler implements HttpHandler {
             e.printStackTrace();
         }
     }
+
+
 
 
 
@@ -288,14 +297,33 @@ public class NewsHttpHandler implements HttpHandler {
     private void sendResponse(HttpExchange httpExchange, String response) throws IOException {
         //  set headers of response
         httpExchange.getResponseHeaders().set("Content-Type", "application/json");
+        httpExchange.getResponseHeaders().set("Content-Length", String.valueOf(response.length()));
         httpExchange.sendResponseHeaders(200, response.length());
         System.out.println(response);
 
         //  send response to the client
         OutputStream outputStream = httpExchange.getResponseBody();
+        System.out.println(response.length());
         outputStream.write(response.getBytes(), 0, response.length());
         outputStream.flush();
-        outputStream.close();
+//        outputStream.close();
+    }
+
+    private void sendResponseGet(HttpExchange httpExchange, String response) throws IOException {
+
+        //  set headers of response
+        httpExchange.getResponseHeaders().set("Content-Type", "application/json");
+        httpExchange.getResponseHeaders().set("Content-Length", String.valueOf(response.length()));
+        httpExchange.sendResponseHeaders(200, response.length());
+        System.out.println(response);
+
+        //  send response to the client
+        OutputStream outputStream = httpExchange.getResponseBody();
+        System.out.println(response.length());
+//        outputStream.write(response.getBytes(), 0, response.length());
+        outputStream.write(response.getBytes());
+        outputStream.flush();
+//        outputStream.close();
     }
 
 }
