@@ -26,11 +26,11 @@ public class TestNewsApi {
     static String myPersonalApiKey = "4c950226914b4be989bc860c8763d56f";
     static String newsDefUrl = "http://newsapi.org/v2/everything";
 
-//    public static void main(String[] args) throws IOException {
-//        callPostToServer();
+    public static void main(String[] args) throws IOException {
+        callPostToServer();
 //        callPutToServer();
 //        callGetToServer();
-//    }
+    }
 
 
 
@@ -95,7 +95,7 @@ public class TestNewsApi {
     }
 
     public static void callPostToServer () throws IOException {
-        String urrl = "http://localhost:8001/news";
+        String urrl = "http://localhost:8003/news";
 
         HttpClient httpclient = HttpClients.createDefault();
         HttpPost httppost = new HttpPost(urrl);

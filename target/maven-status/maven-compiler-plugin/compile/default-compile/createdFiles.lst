@@ -1,0 +1,10 @@
+mainPackage\NewsHttpHandler.class
+mainPackage\DbUtils.class
+mainPackage\TestNewsApi.class
+poms\Source.class
+mainPackage\CommonTopicsRoutineRunner.class
+poms\BaseDTO.class
+mainPackage\SingleProcessValues.class
+poms\BasicResponse.class
+mainPackage\MainRunner.class
+poms\Articles.class

@@ -9,6 +9,6 @@
         <module name="sem4lab1newsPart" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="13" />
+    <bytecodeTargetLevel target="8" />
   </component>
 </project>

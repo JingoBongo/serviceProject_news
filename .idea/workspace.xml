@@ -1,7 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="sem4lab1newsPart:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ae7ad77-edf4-4edb-9a04-f5febd2062d3" name="Default Changelist" comment="" />
+    <list default="true" id="5ae7ad77-edf4-4edb-9a04-f5febd2062d3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/sem4lab1newsPart_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mainPackage/DbUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainPackage/DbUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mainPackage/MainRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainPackage/MainRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mainPackage/NewsHttpHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainPackage/NewsHttpHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mainPackage/TestNewsApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainPackage/TestNewsApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/sem4lab1newsPart.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mainPackage/CommonTopicsRoutineRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mainPackage/CommonTopicsRoutineRunner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mainPackage/DbUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mainPackage/DbUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mainPackage/MainRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mainPackage/MainRunner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mainPackage/MyHttpHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mainPackage/NewsHttpHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mainPackage/NewsHttpHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mainPackage/SingleProcessValues.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mainPackage/SingleProcessValues.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mainPackage/TestNewsApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mainPackage/TestNewsApi.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/poms/Articles.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/poms/Articles.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/poms/BaseDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/poms/BaseDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/poms/BasicResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/poms/BasicResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/poms/Source.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/poms/Source.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +44,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -22,6 +55,7 @@
     </option>
   </component>
   <component name="ProjectId" id="1iPFckw2JmkEmoy4rfOmPRh3T9e" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -29,31 +63,39 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="D:/Downloads/serviceProject_currency-master/serviceProject_currency-master" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="mainPackage" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Files\UnivSem3Pt1\burlac2\sem4lab1newsPart\src\main\java" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="mainPackage" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="mainPackage" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Files\UnivSem3Pt1\burlac2\sem4lab1newsPart\src\main\java" />
       <recent name="D:\Files\UnivSem3Pt1\burlac2\sem4lab1newsPart\lib" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="mainPackage" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Files\UnivSem3Pt1\burlac2\sem4lab1newsPart\src\main\resources" />
+      <recent name="D:\Files\UnivSem3Pt1\burlac2\sem4lab1newsPart\src\main\java" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="mainPackage" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="mainPackage" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.TestNewsApi">
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="java -jar target/newsService.jar" />
+      <command value="java -jar target/sem4lab1newsPart-1.0-SNAPSHOT.jar" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.MainRunner">
     <configuration name="DbUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="mainPackage.DbUtils" />
       <module name="sem4lab1newsPart" />
@@ -83,8 +125,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TestNewsApi" />
         <item itemvalue="Application.MainRunner" />
+        <item itemvalue="Application.TestNewsApi" />
         <item itemvalue="Application.DbUtils" />
       </list>
     </recent_temporary>
@@ -115,11 +157,12 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="552" y="178" key="#Project_Structure" timestamp="1601809397434">
+    <state x="552" y="178" key="#Project_Structure" timestamp="1603050587346">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1368" y="178" key="#Project_Structure/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1601803156801" />
     <state x="552" y="178" key="#Project_Structure/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601809397434" />
+    <state x="552" y="178" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1603050587346" />
     <state x="-1155" y="203" key="#com.intellij.ide.util.MemberChooser" timestamp="1602939778370">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
@@ -128,6 +171,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="300" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1602417213600" />
+    <state x="711" y="374" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1603039203058">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="711" y="374" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603039203058" />
     <state x="756" y="379" width="408" height="291" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1602417214832">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -136,74 +183,87 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1206" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1601807570629" />
-    <state x="799" y="322" width="440" height="486" key="FileChooserDialogImpl" timestamp="1603012148311">
+    <state x="799" y="322" width="440" height="486" key="FileChooserDialogImpl" timestamp="1603038705793">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1121" y="322" width="440" height="486" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1602930186863" />
-    <state x="799" y="322" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1603012148311" />
-    <state width="1877" height="287" key="GridCell.Tab.0.bottom" timestamp="1602969395556">
+    <state x="799" y="322" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1603038705793" />
+    <state width="1877" height="270" key="GridCell.Tab.0.bottom" timestamp="1603051862000">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1602929518785" />
     <state width="1877" height="280" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1602936920886" />
-    <state width="1877" height="287" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1602969395556" />
-    <state width="1877" height="287" key="GridCell.Tab.0.center" timestamp="1602969395556">
+    <state width="1877" height="270" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1603051862000" />
+    <state width="1877" height="270" key="GridCell.Tab.0.center" timestamp="1603051861999">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1602929518785" />
     <state width="1877" height="280" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1602936920885" />
-    <state width="1877" height="287" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1602969395556" />
-    <state width="1877" height="287" key="GridCell.Tab.0.left" timestamp="1602969395556">
+    <state width="1877" height="270" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1603051861999" />
+    <state width="1877" height="270" key="GridCell.Tab.0.left" timestamp="1603051861999">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1602929518785" />
     <state width="1877" height="280" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1602936920885" />
-    <state width="1877" height="287" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1602969395556" />
-    <state width="1877" height="287" key="GridCell.Tab.0.right" timestamp="1602969395556">
+    <state width="1877" height="270" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1603051861999" />
+    <state width="1877" height="270" key="GridCell.Tab.0.right" timestamp="1603051861999">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1602929518785" />
     <state width="1877" height="280" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1602936920886" />
-    <state width="1877" height="287" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1602969395556" />
-    <state width="1877" height="287" key="GridCell.Tab.1.bottom" timestamp="1602969420437">
+    <state width="1877" height="270" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603051861999" />
+    <state width="1877" height="287" key="GridCell.Tab.1.bottom" timestamp="1603041934725">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="280" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1602441942545" />
     <state width="1877" height="280" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1602936923610" />
-    <state width="1877" height="287" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1602969420437" />
-    <state width="1877" height="287" key="GridCell.Tab.1.center" timestamp="1602969420437">
+    <state width="1877" height="287" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1603041934725" />
+    <state width="1877" height="287" key="GridCell.Tab.1.center" timestamp="1603041934725">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="280" key="GridCell.Tab.1.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1602441942545" />
     <state width="1877" height="280" key="GridCell.Tab.1.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1602936923610" />
-    <state width="1877" height="287" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1602969420437" />
-    <state width="1877" height="287" key="GridCell.Tab.1.left" timestamp="1602969420437">
+    <state width="1877" height="287" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1603041934725" />
+    <state width="1877" height="287" key="GridCell.Tab.1.left" timestamp="1603041934725">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="280" key="GridCell.Tab.1.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1602441942545" />
     <state width="1877" height="280" key="GridCell.Tab.1.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1602936923610" />
-    <state width="1877" height="287" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1602969420437" />
-    <state width="1877" height="287" key="GridCell.Tab.1.right" timestamp="1602969420437">
+    <state width="1877" height="287" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1603041934725" />
+    <state width="1877" height="287" key="GridCell.Tab.1.right" timestamp="1603041934725">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="280" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1602441942545" />
     <state width="1877" height="280" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1602936923610" />
-    <state width="1877" height="287" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1602969420437" />
+    <state width="1877" height="287" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603041934725" />
     <state x="-1430" y="174" key="Maven.ArtifactSearchDialog" timestamp="1601805293885">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1430" y="174" key="Maven.ArtifactSearchDialog/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1601805293885" />
-    <state x="461" y="162" key="SettingsEditor" timestamp="1602944195226">
+    <state x="461" y="162" width="1227" height="846" key="SettingsEditor" timestamp="1603046261889">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1459" y="162" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1601803107649" />
-    <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1602944195226" />
+    <state x="461" y="162" width="1227" height="846" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1603046261889" />
     <state x="342" y="224" key="new project wizard" timestamp="1603012149012">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="342" y="224" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1603012149012" />
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup" timestamp="1603039233982">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1603039233982" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/mainPackage/TestNewsApi.java</url>
+          <line>111</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
         <watch expression="res" language="JAVA" />

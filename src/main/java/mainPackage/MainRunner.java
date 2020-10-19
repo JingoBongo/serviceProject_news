@@ -38,26 +38,35 @@ public class MainRunner {
 
         //args:
 //        0 : service port
-        servicePort = args[0];
+        servicePort = "8080";
+//        servicePort = args[0];
 //        1 : pool size
-        poolSize = Integer.valueOf(args[1]);
+        poolSize = 10;
+//        poolSize = Integer.valueOf(args[1]);
 //        2 : gate ip
-        gateIp = args[2];
+//        gateIp = args[2];
+        gateIp = "no such";
 //        3 : gate port
-        gatePort = args[3];
+//        gatePort = args[3];
+        gatePort = "no such";
 //        4 : db type
-        dbType = args[4];
+//        dbType = args[4];
+        dbType = "mysql";
 //        5 : db ip
-        dbIp = args[5];
+//        dbIp = args[5];
+        dbIp = "172.17.0.2";
 //        6 : db port
-        dbPort = args[6];
+//        dbPort = args[6];
+        dbPort = "33060";
 //        7 : db name
-        dbName = args[7];
+//        dbName = args[7];
+        dbName = "news";
 
 
 
         //Register in service
-        recursivePostRegisterInGate();
+        //TODO: uncomment
+//        recursivePostRegisterInGate();
         //
 
         //we need a part for storing all requests data

@@ -17,7 +17,7 @@ public class DbUtils {
         try {
             //1. get connection to db
 //            Connection myConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/news", "root", "root");
-            Connection myConn = DriverManager.getConnection("jdbc:mysql://localhost:"+MainRunner.dbPort+"/"+MainRunner.dbName, "root", "root");
+            Connection myConn = DriverManager.getConnection("jdbc:mysql://\"+MainRunner.dbIp+\":"+MainRunner.dbPort+"/"+MainRunner.dbName, "root", "root");
             //2. create statement
             Statement myStmt = myConn.createStatement();
             //3. execute sql query
@@ -39,7 +39,7 @@ public class DbUtils {
         try{
             //1. get connection to db
 //            Connection myConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/news", "root", "root");
-            Connection myConn = DriverManager.getConnection("jdbc:mysql://localhost:"+MainRunner.dbPort+"/"+MainRunner.dbName, "root", "root");
+            Connection myConn = DriverManager.getConnection("jdbc:mysql://\"+MainRunner.dbIp+\":"+MainRunner.dbPort+"/"+MainRunner.dbName, "root", "root");
             //2. create statement
             Statement myStmt = myConn.createStatement();
             //3. execute sql query
@@ -67,7 +67,7 @@ public class DbUtils {
         try{
             //1. get connection to db
 //            Connection myConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/news", "root", "root");
-            Connection myConn = DriverManager.getConnection("jdbc:mysql://localhost:"+MainRunner.dbPort+"/"+MainRunner.dbName, "root", "root");
+            Connection myConn = DriverManager.getConnection("jdbc:mysql://\"+MainRunner.dbIp+\":"+MainRunner.dbPort+"/"+MainRunner.dbName, "root", "root");
             //2. create statement
             Statement myStmt = myConn.createStatement();
             //3. execute sql query
@@ -91,7 +91,7 @@ public class DbUtils {
         try{
             //1. get connection to db
 //            Connection myConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/news", "root", "root");
-            Connection myConn = DriverManager.getConnection("jdbc:mysql://localhost:"+MainRunner.dbPort+"/"+MainRunner.dbName, "root", "root");
+            Connection myConn = DriverManager.getConnection("jdbc:mysql://\"+MainRunner.dbIp+\":"+MainRunner.dbPort+"/"+MainRunner.dbName, "root", "root");
             //2. create statement
             Statement myStmt = myConn.createStatement();
             //3. execute sql query
@@ -116,7 +116,7 @@ public class DbUtils {
             try{
                 //1. get connection to db
 //                Connection myConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/news", "root", "root");
-                Connection myConn = DriverManager.getConnection("jdbc:mysql://localhost:"+MainRunner.dbPort+"/"+MainRunner.dbName, "root", "root");
+                Connection myConn = DriverManager.getConnection("jdbc:mysql://"+MainRunner.dbIp+":"+MainRunner.dbPort+"/"+MainRunner.dbName, "root", "root");
                 //2. create statement
                 Statement myStmt = myConn.createStatement();
                 //3. execute sql query
