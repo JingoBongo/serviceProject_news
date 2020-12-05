@@ -18,17 +18,6 @@ public class CommonTopicsRoutineRunner extends TimerTask {
     @Override
     public void run() {
         //need to update most "popular topics"
-
-
-//        business entertainment general health science sports technology
-//        List<String> categories = new ArrayList<>();
-//        categories.add("category=business");
-//        categories.add("category=entertainment");
-//        categories.add("category=general");
-//        categories.add("category=sports");
-//        categories.add("category=technology");
-
-
         List<String> commonTopics = getCommonTopics();
 
         assert commonTopics != null;

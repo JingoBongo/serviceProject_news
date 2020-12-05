@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="sem4lab1newsPart" />
+        <module name="serviceProject_news" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8" />

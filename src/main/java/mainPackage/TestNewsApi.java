@@ -27,9 +27,13 @@ public class TestNewsApi {
     static String newsDefUrl = "http://newsapi.org/v2/everything";
 
     public static void main(String[] args) throws IOException {
-        callPostToServer();
-        callPutToServer();
-        callGetToServer();
+//        callPostToServer();
+//        callPutToServer();
+//        callGetToServer();
+//        callPostToCashServer();
+        callPutToCashServer();
+        callGetToCashServer();
+
     }
 
 
@@ -95,14 +99,38 @@ public class TestNewsApi {
     }
 
     public static void callPostToServer() throws IOException {
-//        String urrl = "http://localhost:8003/news";
-        String urrl = "http://localhost:8003/";
+        String urrl = "http://localhost:8080/createEmployee";
+//        String urrl = "http://localhost:8003/";
 
         HttpClient httpclient = HttpClients.createDefault();
         HttpPost httppost = new HttpPost(urrl);
 
         httppost.setHeader("Content-Type", "application/json");
-        StringEntity param = new StringEntity("{\"functionName\":\"news\",\"topic\":\"lada\"}");
+//        StringEntity param = new StringEntity("{\"functionName\":\"news\",\"topic\":\"lada\"}");
+        StringEntity param = new StringEntity("{\"name\":\"badaboi\"}");
+
+
+        httppost.setEntity(param);
+
+//Execute and get the response.
+        HttpResponse response = httpclient.execute(httppost);
+        ResponseHandler<String> handler = new BasicResponseHandler();
+        String textRepo = handler.handleResponse(response);
+//        HttpEntity entity = response.getEntity();
+        System.out.println(textRepo);
+
+    }
+
+    public static void callPostToCashServer() throws IOException {
+        String urrl = "http://localhost:8081/createMoneyRecords";
+//        String urrl = "http://localhost:8003/";
+
+        HttpClient httpclient = HttpClients.createDefault();
+        HttpPost httppost = new HttpPost(urrl);
+
+        httppost.setHeader("Content-Type", "application/json");
+//        StringEntity param = new StringEntity("{\"functionName\":\"news\",\"topic\":\"lada\"}");
+        StringEntity param = new StringEntity("{\"name\":\"badaboi\"}");
 
 
         httppost.setEntity(param);
@@ -117,14 +145,37 @@ public class TestNewsApi {
     }
 
     public static void callPutToServer() throws IOException {
-//        String urrl = "http://localhost:8003/news";
-        String urrl = "http://localhost:8003/";
+        String urrl = "http://localhost:8080/createEmployee";
+//        String urrl = "http://localhost:8003/";
         HttpClient httpclient = HttpClients.createDefault();
         HttpPut httpput = new HttpPut(urrl);
 
         httpput.setHeader("Content-Type", "application/json");
 //        StringEntity param = new StringEntity("{\"topic\":\"lada\"}");
-        StringEntity param = new StringEntity("{\"id\":\"80800\",\"finalize\":true}");
+        StringEntity param = new StringEntity("{\"id\":\"80810\",\"role\":\"manager\",\"location\":\"roof\"}");
+
+
+        httpput.setEntity(param);
+
+//Execute and get the response.
+//        HttpResponse response = httpclient.execute(httpput);
+        HttpResponse response = httpclient.execute(httpput);
+        ResponseHandler<String> handler = new BasicResponseHandler();
+        String textRepo = handler.handleResponse(response);
+//        HttpEntity entity = response.getEntity();
+        System.out.println(textRepo);
+
+    }
+
+    public static void callPutToCashServer() throws IOException {
+        String urrl = "http://localhost:8081/createMoneyRecords";
+//        String urrl = "http://localhost:8003/";
+        HttpClient httpclient = HttpClients.createDefault();
+        HttpPut httpput = new HttpPut(urrl);
+
+        httpput.setHeader("Content-Type", "application/json");
+//        StringEntity param = new StringEntity("{\"topic\":\"lada\"}");
+        StringEntity param = new StringEntity("{\"id\":\"80810\",\"salary\":\"9000\",\"daysOff\":\"27\"}");
 
 
         httpput.setEntity(param);
@@ -140,11 +191,29 @@ public class TestNewsApi {
     }
 
     public static void callGetToServer() throws IOException {
-//        String urrl = "http://localhost:8001/news";
-        String urrl = "http://localhost:8003/";
+        String urrl = "http://localhost:8080/createEmployee";
+//        String urrl = "http://localhost:8003/";
 //        ResponseHandler<String> handler = new BasicResponseHandler();
         HttpClient client = HttpClientBuilder.create().build();
         HttpGet request = new HttpGet(urrl + "?id=80800");
+//        request.addHeader("X-Api-Key", myPersonalApiKey);
+        HttpResponse response = client.execute(request);
+//        String allTextFromPage = handler.handleResponse(response);
+
+        ResponseHandler<String> handler = new BasicResponseHandler();
+        String textRepo = handler.handleResponse(response);
+//        HttpEntity entity = response.getEntity();
+        System.out.println(textRepo);
+
+        ((CloseableHttpClient) client).close();
+//        return allTextFromPage;
+    }
+    public static void callGetToCashServer() throws IOException {
+        String urrl = "http://localhost:8081/createMoneyRecords";
+//        String urrl = "http://localhost:8003/";
+//        ResponseHandler<String> handler = new BasicResponseHandler();
+        HttpClient client = HttpClientBuilder.create().build();
+        HttpGet request = new HttpGet(urrl + "?id=80810");
 //        request.addHeader("X-Api-Key", myPersonalApiKey);
         HttpResponse response = client.execute(request);
 //        String allTextFromPage = handler.handleResponse(response);
